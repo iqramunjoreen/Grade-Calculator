@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<link type="text/css" rel="stylesheet" href="calculator.css" media="all";
+<html lang="en">
+<html>
+    <head>
+        <title>Cmpt276 A1 Grade Calculator</title>
+    </head>
+    <div class="white-box">
+        <body>
+            <h1 class="calculator">Grade Calculator</h1>
+            <div class="blue-box">
+                <h2 class="activities">Activities</h2>
+                <h3 class="give-grades">Give grades to the numeric activities:</h3>
+                <table>
+                    <tr> <!-- titles -->
+                        <th align="left">Name</th>
+                        <th align="left">Short Name</th>
+                        <th align="left">Weight</th>
+                        <th align="left">Grade</th>
+                        <th align="left">Percent</th>
+                    </tr>
+                    <tr> <!-- Activity 1-->
+                        <td>Activity 1</td>
+                        <td>A1</td>
+                        <td><input type="number" class="score" id="a1weight" value=""></td>
+                        <td>
+                            <input type="number" class="score" id="a1grade1" value="">
+                            <slash>/</slash><br>
+                            <input type="number" class="score" id="a1grade2" value="">
+                        </td>
+                        <td><p type="number" class="percent" id="%1"></p></td>
+                    </tr>
+                    <tr> <!-- Activity 2-->
+                        <td>Activity 2</td>
+                        <td>A2</td>
+                        <td><input type="number" class="score" id="a2weight"></td>
+                        <td>
+                            <input type="number" class="score" id="a2grade1">
+                            <slash>/</slash><br>
+                            <input type="number" class="score" id="a2grade2">
+                        </td>
+                        <td><p type="number" class="percent" id="%2"></p></td>
+                    </tr>
+                    <tr> <!-- Activity 3-->
+                        <td>Activity 3</td>
+                        <td>A3</td>
+                        <td><input type="number" class="score" id="a3weight"></td>
+                        <td>
+                            <input type="number" class="score" id="a3grade1">
+                            <slash>/</slash><br>
+                            <input type="number" class="score" id="a3grade2">
+                        </td>
+                        <td><p type="number" class="percent" id="%3"></p></td>
+                    </tr>
+                    <tr> <!-- Activity 4-->
+                        <td>Activity 4</td>
+                        <td>A4</td>
+                        <td><input type="number" class="score" id="a4weight"></td>
+                        <td>
+                            <input type="number" class="score" id="a4grade1">
+                            <slash>/</slash><br>
+                            <input type="number" class="score" id="a4grade2">
+                        </td>
+                        <td><p type="number" class="percent" id="%4"></p></td>
+                    </tr>
+                </table>
+                <h4 class="activities">Result</h4>
+                <p class="result" id="result"></p>
+                <button class="button1" id="button1" onclick="weight()">WEIGHTED</button>
+                <button class="button2" id="button2" onclick="mean()">MEAN</button>
+                <br>
+            </div>
+        </body>
+    </div>
+    <script type="text/javascript" src="calculator.js" defer></script>
+</html>
